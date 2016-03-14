@@ -1,4 +1,4 @@
-<ul>
+
 <% @events.each do |event| %>
   <li>
     <%= event.name %>
@@ -10,4 +10,5 @@
 </ul>
 
 <%= link_to 'New Event', new_event_path %>
+
 <%= paginate @events %>
